@@ -11,5 +11,13 @@
 
     <artifactId>h-user-client</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.framework</groupId>
+            <artifactId>h-parent</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
 
 </project>
