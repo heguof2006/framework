@@ -1,0 +1,36 @@
+server:
+  port: 8082
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://user:123456@${eureka.instance.hostname}:${server.port}/eureka/
+#server:
+#  port: 8082 #8181
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://user:123456@localhost:8082/eureka  #注册 中心已经开启认证
+#    register-with-eureka: false #不要向注册中心注册自己
+#    fetch-registry: false #禁止检索服务
+##  instance:
+##    prefer-ip-address: true
+##    instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+#
+#spring:
+#  application:
+#    name: eureka-server
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/ecserverdb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+#    username: root
+#    password:
+#
+#logging:
+#  level:
+#    org.springframework.web: INFO
+#    org.springframework.security: INFO
+#    com.ecserver: INFO

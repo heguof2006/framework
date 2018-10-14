@@ -1,0 +1,2 @@
+eureka server 为服务注册中，提供服务注册和发现的功能
+访问路径：http://localhost:8082/

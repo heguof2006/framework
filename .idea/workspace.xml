@@ -1,108 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ca6e288-be56-4f4d-8192-5532168a938c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/framework.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/hgenerator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/java/io/renren/GeneratorApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/java/io/renren/controller/SysGeneratorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/java/io/renren/dao/SysGeneratorDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/java/io/renren/entity/ColumnEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/java/io/renren/entity/TableEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/java/io/renren/service/SysGeneratorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/java/io/renren/utils/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/java/io/renren/utils/GenUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/java/io/renren/utils/PageUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/java/io/renren/utils/Query.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/java/io/renren/utils/R.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/java/io/renren/utils/RRException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/java/io/renren/utils/RRExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/generator.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/mapper/SysGeneratorDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/css/AdminLTE.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/css/all-skins.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/js/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/js/generator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/libs/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/libs/app.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/libs/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/libs/fastclick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/libs/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/libs/jquery.slimscroll.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/libs/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/libs/vue.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/plugins/jqgrid/grid.locale-cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/plugins/jqgrid/jquery.jqGrid.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/plugins/jqgrid/ui.jqgrid-bootstrap-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/plugins/jqgrid/ui.jqgrid-bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/plugins/jqgrid/ui.jqgrid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/plugins/layer/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/plugins/layer/mobile/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/plugins/layer/mobile/need/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/plugins/layer/skin/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/plugins/layer/skin/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/plugins/layer/skin/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/plugins/layer/skin/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/plugins/layer/skin/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/plugins/layer/skin/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/plugins/layer/skin/moon/default.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/static/plugins/layer/skin/moon/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/template/Controller.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/template/Dao.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/template/Dao.xml.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/template/Dto.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/template/Entity.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/template/Service.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/template/ServiceImpl.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/template/list.jsp.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/template/v1/Controller.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/template/v1/Dao.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/template/v1/Dao.xml.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/template/v1/Dto.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/template/v1/Entity.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/template/v1/Service.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/template/v1/ServiceImpl.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/template/v1/list.html.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/template/v1/list.js.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/template/v1/menu.sql.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/views/generator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-generator/src/main/resources/views/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-user/h-user-client/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/ServerBootApplication.java" afterDir="false" />
+    <list default="true" id="5ca6e288-be56-4f4d-8192-5532168a938c" name="Default Changelist" comment="服务治理">
+      <change afterPath="$PROJECT_DIR$/h-user-server/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h-user-server/target/classes/com/fw/server/ServerBootApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h-user-server/target/classes/com/fw/server/controller/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h-user-server/target/classes/com/fw/server/controller/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h-user-server/target/classes/com/fw/server/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h-user-server/target/classes/com/fw/server/utils/ConfigBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h-user-server/target/classes/com/fw/server/utils/Singleton$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h-user-server/target/classes/com/fw/server/utils/Singleton$SingletonHolder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h-user-server/target/classes/com/fw/server/utils/Singleton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h-user-server/说明.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/h-user/h-user-service/src/main/java/com/fm/user/service/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/h-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/h-parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/h-user/h-user-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/h-user/h-user-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/utils/ConfigBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/utils/ConfigBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/utils/PropertiesBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/utils/PropertiesBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/h-user/h-user-client/src/test/java/com/fw/user/test/UserTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/h-user/h-user-rpc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/h-user/h-user-rpc/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/h-user/h-user-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/h-user/h-user-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/controller/ClientBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/controller/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/utils/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/h-user/h-user-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/h-user/h-user-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/h-user/h-user-server/huserserver.iml" beforeDir="false" afterPath="$PROJECT_DIR$/h-user-server/huserserver.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/h-user/h-user-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/h-user-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/ServerBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/h-user-server/src/main/java/com/fw/server/ServerBootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/controller/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/h-user-server/src/main/java/com/fw/server/controller/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/controller/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/h-user-server/src/main/java/com/fw/server/controller/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/h-user-server/src/main/java/com/fw/server/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/utils/ConfigBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/h-user-server/src/main/java/com/fw/server/utils/ConfigBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/utils/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/h-user-server/src/main/java/com/fw/server/utils/Singleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/h-user/h-user-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/h-user-server/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/h-user/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -111,6 +33,9 @@
     <ignored path="$PROJECT_DIR$/h-parent/target/" />
     <ignored path="$PROJECT_DIR$/h-generator/target/" />
     <ignored path="$PROJECT_DIR$/h-user/h-user-client/target/" />
+    <ignored path="$PROJECT_DIR$/h-user/h-user-service/target/" />
+    <ignored path="$PROJECT_DIR$/h-user/h-user-api/target/" />
+    <ignored path="$PROJECT_DIR$/h-user-server/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,43 +57,48 @@
         <counts>
           <entry key="0" value="3" />
           <entry key="class" value="4" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="34" />
+          <entry key="iml" value="2" />
+          <entry key="java" value="54" />
           <entry key="pom" value="2" />
           <entry key="properties" value="2" />
+          <entry key="sql" value="1" />
+          <entry key="txt" value="1" />
           <entry key="vm" value="2" />
-          <entry key="xml" value="22" />
-          <entry key="yml" value="7" />
+          <entry key="xml" value="35" />
+          <entry key="yml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="4" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="34" />
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="JAVA" value="54" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="2" />
+          <entry key="SQL" value="1" />
           <entry key="UML" value="3" />
           <entry key="VTL" value="2" />
-          <entry key="XML" value="24" />
-          <entry key="YAML" value="7" />
+          <entry key="XML" value="37" />
+          <entry key="YAML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="6" />
-          <entry key="java" value="60" />
+          <entry key="java" value="87" />
           <entry key="properties" value="13" />
-          <entry key="xml" value="152" />
-          <entry key="yml" value="74" />
+          <entry key="txt" value="62" />
+          <entry key="xml" value="240" />
+          <entry key="yml" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="60" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="JAVA" value="87" />
+          <entry key="PLAIN_TEXT" value="68" />
           <entry key="Properties" value="13" />
-          <entry key="XML" value="152" />
-          <entry key="YAML" value="74" />
+          <entry key="XML" value="240" />
+          <entry key="YAML" value="96" />
         </counts>
       </usages-collector>
     </session>
@@ -176,28 +106,100 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="59" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="59" />
+            <state relative-caret-position="-513">
+              <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/h-user/h-user-server/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/h-user-server/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+            <state relative-caret-position="114">
+              <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/h-user/h-user-service/src/main/java/com/fm/user/service/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/h-user/h-user-service/src/main/resources/mapper/UserMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/h-user/h-user-service/src/main/user.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/h-user-server/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-76">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/boot/BootApplication.java">
+        <entry file="file://$PROJECT_DIR$/h-user-server/说明.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="19">
+              <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/controller/RibbonController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/controller/RestfulController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/controller/ConsumerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -217,9 +219,11 @@
       <find>weixin</find>
       <find>commons.configuration.version</find>
       <find>cloud</find>
+      <find>com.liuyanzhao.cloud.api.model.User</find>
     </findStrings>
     <replaceStrings>
       <replace>heguofu</replace>
+      <replace>com.fm.user.model.User</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -237,15 +241,31 @@
         <option value="$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/utils/Singleton.java" />
         <option value="$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/controller/ClientBootApplication.java" />
         <option value="$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/h-user/h-user-client/pom.xml" />
         <option value="$PROJECT_DIR$/h-user/h-user-client/src/test/java/com/fw/user/test/UserTest.java" />
         <option value="$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/utils/PropertiesBean.java" />
-        <option value="$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/controller/UserController.java" />
         <option value="$PROJECT_DIR$/h-user/h-user-client/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/h-parent/pom.xml" />
         <option value="$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/ServerBootApplication.java" />
-        <option value="$PROJECT_DIR$/h-user/h-user-server/pom.xml" />
         <option value="$PROJECT_DIR$/h-user/h-user-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/h-user/pom.xml" />
+        <option value="$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/config/BeanConfig.java" />
+        <option value="$PROJECT_DIR$/h-user/h-user-api/src/main/java/com/fm/user/service/UserService.java" />
+        <option value="$PROJECT_DIR$/h-user/h-user-server/pom.xml" />
+        <option value="$PROJECT_DIR$/h-user/h-user-service/src/main/java/com/fm/user/service/CloudCoreApplication.java" />
+        <option value="$PROJECT_DIR$/h-user/h-user-service/src/main/java/com/fm/user/service/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/h-user/h-user-api/src/main/java/com/fm/user/model/User.java" />
+        <option value="$PROJECT_DIR$/h-user/h-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/h-user/h-user-service/src/main/java/com/fm/user/service/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/h-user/h-user-service/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/h-user/h-user-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/h-user/h-user-api/pom.xml" />
+        <option value="$PROJECT_DIR$/h-user/h-user-api/src/main/java/com/fm/user/ApiBootApplication.java" />
+        <option value="$PROJECT_DIR$/h-user/h-user-client/pom.xml" />
+        <option value="$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/utils/StatusCodeEnum.java" />
+        <option value="$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/vo/ResultVO.java" />
+        <option value="$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/h-user-server/pom.xml" />
+        <option value="$PROJECT_DIR$/h-user-server/说明.txt" />
       </list>
     </option>
   </component>
@@ -267,21 +287,16 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="h-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="h-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="h-user-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="h-user-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="h-user-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
@@ -312,95 +327,22 @@
             <path>
               <item name="framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="h-generator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="h-parent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
               <item name="h-user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user-client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="boot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user" type="462c0819:PsiDirectoryNode" />
               <item name="h-user-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user" type="462c0819:PsiDirectoryNode" />
               <item name="h-user-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user" type="462c0819:PsiDirectoryNode" />
               <item name="h-user-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -408,48 +350,6 @@
             <path>
               <item name="framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="h-user" type="462c0819:PsiDirectoryNode" />
               <item name="h-user-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -469,7 +369,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539493692115" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539525878560" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -477,7 +377,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\gitworkspace\framework\framework" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\gitworkspace\framework\framework\h-user\h-user-service\src\main\resources" />
       <recent name="D:\workspace\gitworkspace\framework\framework\h-generator\src\main" />
     </key>
   </component>
@@ -507,6 +411,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CloudCoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="huserservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fm.user.service.CloudCoreApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServerBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="h-user-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.fw.server.ServerBootApplication" />
@@ -526,6 +437,7 @@
     <list>
       <item itemvalue="Spring Boot.ServerBootApplication" />
       <item itemvalue="Spring Boot.BootApplication" />
+      <item itemvalue="Spring Boot.CloudCoreApplication" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -540,18 +452,40 @@
       <updated>1539405586725</updated>
       <workItem from="1539405587959" duration="1071000" />
       <workItem from="1539407058953" duration="11374000" />
-      <workItem from="1539479804590" duration="7655000" />
+      <workItem from="1539479804590" duration="13981000" />
     </task>
+    <task id="LOCAL-00001" summary="服务治理">
+      <created>1539518402788</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539518402788</updated>
+    </task>
+    <task id="LOCAL-00002" summary="服务治理">
+      <created>1539525312430</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1539525312430</updated>
+    </task>
+    <task id="LOCAL-00003" summary="服务治理">
+      <created>1539525428323</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1539525428323</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20100000" />
+    <option name="totallyTimeSpent" value="26426000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25670242" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25670242" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -561,7 +495,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.305949" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.50141644" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -573,7 +507,7 @@
       <window_info anchor="bottom" id="Spring" order="11" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.5" />
-      <window_info anchor="bottom" id="Run Dashboard" order="14" visible="true" weight="0.19971672" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="14" visible="true" weight="0.3753541" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -582,7 +516,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.3297587" />
+      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.1769437" />
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
@@ -592,32 +526,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="服务治理" />
+    <option name="LAST_COMMIT_MESSAGE" value="服务治理" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/h-user/h-user-rpc/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h-generator/src/main/java/io/renren/dao/SysGeneratorDao.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h-generator/src/main/resources/mapper/SysGeneratorDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-235" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h-generator/src/main/resources/generator.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h-generator/hgenerator.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/h-generator/src/main/java/io/renren/controller/SysGeneratorController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-50">
@@ -629,6 +542,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="121" column="61" selection-start-line="121" selection-start-column="61" selection-end-line="121" selection-end-column="61" />
+          <folding>
+            <element signature="e#2665#2679#0" expanded="true" />
+            <element signature="e#4129#4145#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -636,6 +553,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#303#304#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -679,25 +599,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/utils/Singleton.java">
+    <entry file="file://$PROJECT_DIR$/h-user-server/src/main/java/com/fw/server/utils/Singleton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h-user/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-eureka-server/2.0.0.RELEASE/spring-cloud-netflix-eureka-server-2.0.0.RELEASE.pom">
       <provider selected="true" editor-type-id="text-editor" />
@@ -728,34 +635,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/resources/properties/application-dev.properties">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/config/BeanConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/controller/ConsumerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/controller/RestfulController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/controller/RibbonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-118">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/utils/PropertiesBean.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1002,13 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.4.RELEASE/spring-core-5.0.4.RELEASE.jar!/org/springframework/core/annotation/AnnotationUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
@@ -1016,21 +888,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/h-parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-703">
-          <caret line="23" column="46" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h-user/h-user-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/ServerBootApplication.java">
+    <entry file="file://$PROJECT_DIR$/h-user-server/src/main/java/com/fw/server/ServerBootApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
@@ -1047,13 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/h-user/h-user-client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -1061,24 +912,265 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/h-user/h-user-server/src/main/java/com/fw/server/utils/ConfigBean.java">
+    <entry file="file://$PROJECT_DIR$/h-user-server/src/main/java/com/fw/server/utils/ConfigBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/h-user/h-user-server/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/h-user/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+        <state relative-caret-position="157">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="23" column="46" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/config/BeanConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-service/src/main/java/com/fm/user/service/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-api/src/main/java/com/fm/user/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user-server/src/main/java/com/fw/server/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-service/src/main/java/com/fm/user/service/CloudCoreApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-api/huserrpc.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-api/src/main/java/com/fm/user/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-api/src/main/java/com/fm/user/ApiBootApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="20" selection-end-line="49" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/boot/BootApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="228">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/utils/StatusCodeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding>
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/vo/ResultVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <folding>
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/controller/RibbonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/controller/RestfulController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/controller/ConsumerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-client/src/main/java/com/fw/user/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-513">
+          <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-service/src/main/java/com/fm/user/service/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-service/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user/h-user-service/src/main/user.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/h-user-server/说明.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
         </state>
       </provider>
     </entry>
