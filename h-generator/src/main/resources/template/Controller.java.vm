@@ -1,0 +1,116 @@
+package ${package}.${moduleName}.controller;
+
+import com.github.pagehelper.PageInfo;
+import com.jcl.common.base.BaseController;
+import com.jcl.dto.BaseResp;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
+import com.alibaba.dubbo.config.annotation.Reference;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import ${package}.${moduleName}.dto.${className}Dto;
+import ${package}.${moduleName}.service.${className}Service;
+
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+@RestController
+@RequestMapping("/${moduleName}/${classname}")
+public class ${className}Controller extends BaseController{
+    @Reference
+    private ${className}Service ${classname}Service;
+
+    /**
+     * 列表
+     */
+    @RequestMapping("/list.jspx")
+    @RequiresPermissions("${moduleName}:${classname}:list")
+    public BaseResp list(${className}Dto ${classname}Dto,
+                         @RequestParam(defaultValue = "1") Integer pageNo, @RequestParam(defaultValue = "10") Integer pageSize) {
+        try {
+            PageInfo pageInfo = ${classname}Service.selectByPage(pageNo, pageSize, ${classname}Dto);
+            return BaseResp.success(pageInfo);
+        } catch (Exception ex) {
+            logger.error("", ex);
+            return BaseResp.error(ex);
+        }
+    }
+
+    /**
+     * 信息
+     */
+    @RequestMapping("/info.jspx")
+    @RequiresPermissions("${moduleName}:${classname}:info")
+    public BaseResp info(Long pk) {
+        try {
+            ${className}Dto ${classname}Dto = ${classname}Service.selectByPrimaryKey(pk);
+            return BaseResp.success(${classname}Dto);
+        } catch (Exception ex) {
+            logger.error("", ex);
+            return BaseResp.error(ex);
+        }
+    }
+
+    /**
+     * 保存
+     */
+    @RequestMapping("/save.jspx")
+    @RequiresPermissions("${moduleName}:${pathName}:save")
+    public BaseResp save(${className}Dto ${classname}Dto) {
+        try {
+            int rows = ${classname}Service.insertSelective(${classname}Dto);
+            if (rows > 0) {
+                return BaseResp.success(${classname}Dto);
+            } else {
+                return BaseResp.error(500, "记录保存失败");
+            }
+        } catch (Exception ex) {
+            logger.error("", ex);
+            return BaseResp.error(ex);
+        }
+    }
+
+    /**
+     * 修改
+     */
+    @RequestMapping("/update.jspx")
+    @RequiresPermissions("${moduleName}:${pathName}:update")
+    public BaseResp update(${className}Dto ${classname}Dto) {
+        try {
+            int rows = ${classname}Service.updateByPrimaryKeySelective(${classname}Dto);
+            if (rows > 0) {
+                return BaseResp.success(${classname}Dto);
+            } else {
+                return BaseResp.error(500, "记录修改失败");
+            }
+        } catch (Exception ex) {
+            logger.error("", ex);
+            return BaseResp.error(ex);
+        }
+    }
+
+    /**
+     * 删除
+     */
+    @RequestMapping("/delete.jspx")
+    @RequiresPermissions("${moduleName}:${pathName}:delete")
+    public BaseResp delete(Long pk) {
+        try {
+            int rows = ${classname}Service.deleteByPrimaryKey(pk);
+            if (rows > 0) {
+                return BaseResp.success(true);
+            } else {
+                return BaseResp.error(500, "记录删除失败");
+            }
+        } catch (Exception ex) {
+            logger.error("", ex);
+            return BaseResp.error(ex);
+        }
+    }
+
+}

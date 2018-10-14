@@ -9,9 +9,9 @@ import org.springframework.context.annotation.PropertySource;
  * @EnableConfigurationProperties({PropertiesBean.class})
  * @Autowaired PropertiesBean propertiesBean使用
  */
-@Configuration
-@PropertySource(value = "classpath:properties/application-test.properties")
-@ConfigurationProperties(prefix = "my")
+//@Configuration
+//@PropertySource(value = "classpath:properties/application-test.properties")
+//@ConfigurationProperties(prefix = "my")
 public class PropertiesBean {
     private String name;
 

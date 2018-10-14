@@ -1,0 +1,17 @@
+package ${package}.${moduleName}.service.impl;
+
+import com.alibaba.dubbo.config.annotation.Service;
+import org.springframework.stereotype.Component;
+import com.jcl.orm.tkmapper.BaseServiceImpl;
+
+import ${package}.${moduleName}.dao.${className}Dao;
+import ${package}.${moduleName}.entity.${className};
+import ${package}.${moduleName}.dto.${className}Dto;
+import ${package}.${moduleName}.service.${className}Service;
+
+
+@Component
+@Service
+public class ${className}ServiceImpl extends BaseServiceImpl<${className}Dto, ${className}> implements ${className}Service {
+
+}

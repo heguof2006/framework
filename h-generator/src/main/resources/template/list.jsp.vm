@@ -1,0 +1,326 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>${classname}页面</title>
+    <%@ include file="../base/quote.jsp"%>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+<div class="layui-fluid">
+	<div id="${classname}_parent_container" class="layui-col-md12" style="background: #ffffff">
+		<div id="${classname}_list_container" v-if="listShow">
+			<form class="layui-form" action="${contextpath}/${moduleName}/${classname}/list.jspx" id="searchForm">
+				<div class="layui-card">
+                    <div class="layui-form layui-card-header layuiadmin-card-header-auto">
+                        <div class="layui-form-item">
+							<div class="layui-inline">
+								<%--条件名称--%>
+								<label class="layui-form-label">关键字：</label>
+								<%--条件值--%>
+								<div class="layui-input-inline">
+									<input type="text" name="${pk.attrname}" placeholder="请输入关键字" class="layui-input search-ipt">
+								</div>
+							</div>
+							<div class="layui-inline">
+								<%--条件值--%>
+								<div class="layui-input-inline">
+									<a v-on:click="query()" class="layui-btn layui-btn-sm layuiadmin-btn-useradmin">查询</a>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+			</form>
+			<%--列表展示区域--%>
+			<div class="layui-card-body layui-form">
+				<div style="padding-bottom: 5px;">
+					<a v-on:click="toSave()" class="layui-btn layui-btn-sm layuiadmin-btn-useradmin" data-type="add">添加</a>
+                </div>
+				<form class="layui-form" id="tableForm">
+					<table class="layui-table">
+						<thead>
+						<tr>
+							<th>${pk.comments}</th>
+							#foreach($column in $columns)
+								#if($column.columnName != $pk.columnName)
+									<th>${column.comments}</th>
+								#end
+							#end
+							<th>操作</th>
+						</tr>
+						</thead>
+						<tbody>
+							<tr v-for="(item,index) in items">
+							<td>{{item.${pk.attrname}}}</td>
+							#foreach($column in $columns)
+								#if($column.columnName != $pk.columnName)
+									<td>{{item.${column.attrname}}}</td>
+								#end
+							#end
+								<td>
+									<a v-on:click="info(item.${pk.attrname})" class="layui-btn layui-btn-primary layui-btn-xs">详情</a>
+									<a v-on:click="del(item.${pk.attrname})" class="layui-btn layui-btn-danger layui-btn-xs">删除</a>
+									<a v-on:click="toUpdate(item.${pk.attrname})" class="layui-btn layui-btn-primary layui-btn-xs">修改</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+			<%--分页信息--%>
+			<div id="${classname}_page_container"></div>
+		</div>
+
+		<div id="${classname}_info_container" v-if="infoShow">
+			<form class="layui-form layui-form-pane">
+				<div class="layui-card">
+                    <div class="layui-card-header"><b>详情</b></div>
+                    <div class="layui-card-body" pad15="">
+                        <div class="layui-form" wid100="" lay-filter="">
+							#foreach($column in $columns)
+								#if($column.columnName != $pk.columnName)
+									 <div class="layui-form-item">
+										<label class="layui-form-label">${column.comments}</label>
+										<div class="layui-input-block" >
+											<input disabled class="layui-input" name="${column.attrname}" :value="selectItem.${column.attrname}" />
+										</div>
+									</div>
+								#end
+							#end
+							<div style="clear: both;margin-top: 20px;">
+								<a v-on:click="toList()" class="layui-btn layui-btn-sm layuiadmin-btn-useradmin">返回</a>
+							</div>
+						</div>
+                    </div>
+                </div>
+			</form>
+		</div>
+
+		<div id="${classname}_save_container" v-if="saveShow">
+			<form id="saveForm" class="layui-form layui-form-pane">
+				<div class="layui-card">
+						<div class="layui-card-header"><b>添加</b></div>
+						<div class="layui-card-body" pad15="">
+							<div class="layui-form" wid100="" lay-filter="">
+				#foreach($column in $columns)
+					#if($column.columnName != $pk.columnName)
+							<div class="layui-form-item">
+								<label class="layui-form-label">${column.comments}</label>
+								<div class="layui-input-block" >
+									<input class="layui-input" name="${column.attrname}" placeholder="请填写${column.comments}" />
+								</div>
+							</div>
+						#end
+					#end
+						<div style="clear: both;margin-top: 20px;">
+							<a v-on:click="save()" class="layui-btn layui-btn-sm layuiadmin-btn-useradmin">保存</a>
+							<a v-on:click="toList()" class="layui-btn layui-btn-sm layui-btn-primary layuiadmin-btn-useradmin">取消</a>
+						</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div id="${classname}_update_container" v-if="updateShow">
+			<form id="updateForm" class="layui-form layui-form-pane">
+			<div class="layui-card">
+                    <div class="layui-card-header"><b>修改</b></div>
+                    <div class="layui-card-body" pad15="">
+                        <div class="layui-form" wid100="" lay-filter="">
+				<input type="hidden" name="${pk.attrname}" :value="selectItem.${pk.attrname}" />
+				#foreach($column in $columns)
+					#if($column.columnName != $pk.columnName)
+						<div class="layui-form-item">
+							<label class="layui-form-label">${column.comments}</label>
+							<div class="layui-input-block" >
+								<input class="layui-input" name="${column.attrname}" :value="selectItem.${column.attrname}" placeholder="请填写${column.comments}" />
+							</div>
+						</div>
+					#end
+				#end
+				<div style="clear: both;margin-top: 20px;">
+					<a v-on:click="update()" class="layui-btn layui-btn-sm layuiadmin-btn-useradmin">保存</a>
+					<a v-on:click="toList()" class="layui-btn layui-btn-sm layui-btn-primary layuiadmin-btn-useradmin">取消</a>
+				</div>
+				 </div>
+                    </div>
+                </div>
+			</form>
+		</div>
+	</div>
+</div>
+<script>
+    var vm = new Vue({
+        el : '#${classname}_parent_container',
+        data : {
+            items : [],
+            itemsMap : {},
+            selectItem : {},
+            pageNo : 1,
+            pageSize : 10,
+            listShow : true,
+            infoShow : false,
+            saveShow : false,
+            updateShow : false
+        },
+        methods : {
+            clickRow : function($row){
+                debugger;
+                this.selectItem = this.itemsMap[$row.attr('id')];
+            },
+            info : function(rowId){
+                this.listShow = false;
+                this.infoShow = true;
+                this.saveShow = false;
+                this.updateShow = false;
+                this.selectItem = this.itemsMap[rowId];
+            },
+            toSave : function(){
+                this.listShow = false;
+                this.infoShow = false;
+                this.saveShow = true;
+                this.updateShow = false;
+            },
+            toList : function(){
+                this.listShow = true;
+                this.infoShow = false;
+                this.saveShow = false;
+                this.updateShow = false;
+                this.page(this.condition());
+            },
+            toUpdate : function(rowId){
+                this.listShow = false;
+                this.infoShow = false;
+                this.saveShow = false;
+                this.updateShow = true;
+                this.selectItem = this.itemsMap[rowId];
+            },
+            query : function(){
+                var $this = this;
+                $this.page($this.condition());
+            },
+            save : function(){
+                var $this = this;
+                var saveData = $('#saveForm').serialize();
+                $.ajax({
+                    url : '${contextpath}/${moduleName}/${classname}/save.jspx',
+                    data : saveData,
+                    type : 'POST',
+                    dataType : 'JSON',
+                    success : function(data){
+                        if(0 != data.respCode){
+                            ae.alert(data.respMsg);
+                            return ;
+                        }
+                        ae.success('保存成功');
+                        $this.toList();
+                        $this.page($this.condition());
+                    }
+                });
+            },
+            update : function(){
+                var $this = this;
+                var updateData = $('#updateForm').serialize();
+                $.ajax({
+                    url : '${contextpath}/${moduleName}/${classname}/update.jspx',
+                    data : updateData,
+                    type : 'POST',
+                    dataType : 'JSON',
+                    success : function(data){
+                        if(0 != data.respCode){
+                            ae.alert(data.respMsg);
+                            return ;
+                        }
+                        ae.success('修改成功');
+                        $this.toList();
+                        $this.page($this.condition());
+                    }
+                });
+            },
+            del : function(pk){
+                var $this = this;
+                ae.confirm('您确定要删除这条记录吗?',function(){
+                    $.ajax({
+                        url : '${contextpath}/${moduleName}/${classname}/delete.jspx',
+                        data : {pk:pk},
+                        type : 'POST',
+                        dataType : 'JSON',
+                        success : function(data){
+                            if(0 != data.respCode){
+                                ae.alert(data.respMsg);
+                                return ;
+                            }
+                            ae.success('删除成功');
+                            $this.page($this.condition());
+                        }
+                    });
+                },function(){});
+            },
+            page : function(param){
+                var _this = this;
+//                if(ae){ae.loading()};
+                $.ajax({
+                    url : '${contextpath}/${moduleName}/${classname}/list.jspx',
+                    data : param,
+                    type : 'GET',
+                    dataType : 'JSON',
+                    success : function(data){
+//                        if(ae){ae.loading_close()};
+                        if(0 != data.respCode){
+                            ae.alert(data.respMsg);
+                            return ;
+                        }
+                        _this.items = data.respData.list;
+                        for(var i in _this.items){
+                            var item = _this.items[i];
+                            _this.itemsMap[item.${pk.attrname}] = item;
+                        }
+                        layui.use('laypage', function(){
+                            var laypage = layui.laypage;
+                            laypage.render({
+                                elem: '${classname}_page_container', //注意，这里的 test1 是 ID，不用加 # 号
+                                count: data.respData.total, //数据总数，从服务端得到
+                                curr : data.respData.pageNum,
+                                limit : data.respData.pageSize,
+                                layout: ['count', 'prev', 'page', 'next', 'refresh', 'skip'],
+                                jump: function(obj,first){
+                                    if(!first){
+                                        _this.pageNo = obj.curr;
+                                        _this.pageSize = obj.limit;
+                                        _this.page(_this.condition());
+                                    }
+                                }
+                            });
+                        });
+                    }
+                });
+            },
+            condition : function(){
+                var res = '';
+                res += 'pageNo='+this.pageNo;
+                res += '&pageSize='+this.pageSize;
+                var searchForm = $('#searchForm').serialize();
+                var kv = searchForm.split('&');
+                $.each(kv,function(index,item){
+                    if(item.split('=')[1] != ''){
+                        res  += '&'+item;
+                    }
+                });
+                return res;
+            }
+        },
+        created: function(){
+            this.page(this.condition());
+        }
+    });
+
+    layui.use('form', function(){
+        var form = layui.form;
+    });
+</script>
+</body>
+</html>

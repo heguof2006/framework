@@ -9,6 +9,7 @@
         <module name="h-user-client" />
         <module name="h-user-rpc" />
         <module name="h-user-server" />
+        <module name="hgenerator" />
       </profile>
     </annotationProcessing>
   </component>
