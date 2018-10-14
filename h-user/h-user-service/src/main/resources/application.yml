@@ -1,0 +1,30 @@
+server:
+  port: 8085
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://user:123456@${eureka.instance.hostname}:8082/eureka/
+
+spring:
+  application:
+    name: eureka-producer
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ecserverdb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password:
+  devtools:
+    restart:
+      enabled: true
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.fm.user.model
+#
+#logging:
+#  level:
+#    org.springframework.web: INFO
+#    org.springframework.security: INFO
+#    com.ecserver: INFO

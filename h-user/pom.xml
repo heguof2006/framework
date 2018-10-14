@@ -8,13 +8,15 @@
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <version>1.0.0</version>
 
     <artifactId>h-user</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>h-user-rpc</module>
+        <module>h-user-api</module>
         <module>h-user-client</module>
         <module>h-user-server</module>
+        <module>h-user-service</module>
     </modules>
 
 
