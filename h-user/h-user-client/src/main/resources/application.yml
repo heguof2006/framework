@@ -1,25 +1,33 @@
 server:
-  port: 8081
+  port: 8088
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://user:123456@localhost:8082/eureka  #注册 中心已经开启认证
-  instance:
-    prefer-ip-address: true
-    instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}}
-spring:
-  profiles:
-    active: dev
-  application:
-    name: eureka-client
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/ecserverdb?useSSL=false&characterEncoding=utf-8
-    username: root
-    password:
+      defaultZone: http://user:123456@localhost:8083/eureka  #注册 中心已经开启认证
 
-logging:
-  level:
-    org.springframework.web: DEBUG
-    org.springframework.security: DEBUG
-    com.ecserver: DEBUG
+spring:
+  application:
+    name: cloud-comsumer
+  devtools:
+    restart:
+      enabled: true
+
+#  instance:
+#    prefer-ip-address: true
+#    instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+#spring:
+#  profiles:
+#    active: dev
+#  application:
+#    name: eureka-client
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/ecserverdb?useSSL=false&characterEncoding=utf-8
+#    username: root
+#    password:
+#
+#logging:
+#  level:
+#    org.springframework.web: DEBUG
+#    org.springframework.security: DEBUG
+#    com.ecserver: DEBUG

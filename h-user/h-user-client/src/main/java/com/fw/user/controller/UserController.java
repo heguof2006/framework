@@ -16,15 +16,17 @@ import java.util.List;
  */
 
 @RestController
+@RequestMapping("/client")
 public class UserController {
 
     @Autowired(required = false)
     private UserService userService;
 
-    @GetMapping("/user")
+    @RequestMapping("/user")
     public ResponseEntity<ResultVO> userList() {
         List<User> userList = userService.listUsers();
-        return ResponseEntity.ok().body(new ResultVO(StatusCodeEnum.SUCCESS_CODE.getCode(), StatusCodeEnum.SUCCESS_CODE.getMessage(), userList));
+        return ResponseEntity.ok().body(new ResultVO(StatusCodeEnum.SUCCESS_CODE.getCode(),
+                StatusCodeEnum.SUCCESS_CODE.getMessage(), userList));
     }
 
     @GetMapping("/user/{id}")

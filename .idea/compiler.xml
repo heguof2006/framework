@@ -6,12 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloud-api" />
+        <module name="cloud-core" />
+        <module name="cloud-web" />
+        <module name="eureka-server" />
         <module name="h-user-api" />
         <module name="h-user-client" />
-        <module name="h-user-server" />
         <module name="hgenerator" />
         <module name="huserservice" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="h-user-server" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
